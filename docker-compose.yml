@@ -1,7 +1,8 @@
-version: '2'
+version: '3'
 services: 
     apt-cacher-ng:
         build: ./apt-cacher-ng
+        restart: always
         ports:
             - 3142:3142
         volumes:
